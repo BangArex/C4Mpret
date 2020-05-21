@@ -23,19 +23,21 @@ echo -e '
 \e[35mY88b  d88P d8888888888888   "   888\e[0m 
  \e[35m"Y8888P" d88P     888888       888\e[0m 
 \e[1;34mVersion 1.0.0 Coded By Sadewa Dewa\e[0m
- \e[31m____________ _____ _____\e[0m 
-\e[31m| ___ \ ___ \  ___|_   _|\e[0m
-\e[31m| |_/ / |_/ / |__   | |\e[0m  
-\e[31m|  __/|    /|  __|  | |\e[0m  
-\e[31m| |   | |\ \| |___  | |\e[0m  
-\e[31m\_|   \_| \_\____/  \_/\e[0m  '
+     "\e[31m_______  _______  _______ _________\e[0m
+    "\e[31m(  ____ )(  ____ )(  ____ \\__   __/\e[0m
+    "\e[31m| (    )|| (    )|| (    \/   ) (\e[0m   
+    "\e[31m| (____)|| (____)|| (__       | |\e[0m   
+    "\e[31m|  _____)|     __)|  __)      | |\e[0m   
+    "\e[31m| (      | (\ (   | (         | |\e[0m   
+    "\e[31m| )      | ) \ \__| (____/\   | |\e[0m   
+    "\e[31m|/       |/   \__/(_______/   )_(\e[0m  '
 
                                                                                
 echo " "
-printf "      \e[1;77m卂ㄩㄒ卄ㄖ尺 : 丂卂ᗪ乇山卂 ᗪ乇山卂\e[0m"
-printf "      \e[1;77mㄚㄖㄩㄒㄩ乃乇 : 爪尺 山卄5\e[0m"
-printf "      \e[1;77m千卂匚乇乃ㄖㄖҜ : 丂卂ᗪ乇山卂 ᗪ乇山卂\e[0m"
-printf "      \e[1;77m丨几丂ㄒ卂Ꮆ尺卂爪 : @丂卂ᗪ乇山卂_丂卂尺匚\e[0m"
+printf "      \e[1;77m𝔸𝕌𝕋ℍ𝕆ℝ : 𝕊𝔸𝔻𝔼𝕎𝔸 𝔻𝔼𝕎𝔸\e[0m"
+printf "      \e[1;77m𝕐𝕆𝕌𝕋𝕌𝔹𝔼 : 𝕄ℝ 𝕎ℍ𝟝\e[0m"
+printf "      \e[1;77m𝔽𝔸ℂ𝔼𝔹𝕆𝕆𝕂 : 𝕊𝔸𝔻𝔼𝕎𝔸 𝔻𝔼𝕎𝔸\e[0m"
+printf "      \e[1;77m𝕀ℕ𝕊𝕋𝔸𝔾ℝ𝔸𝕄 : @𝕊𝔸𝔻𝔼𝕎𝔸_𝕊𝔸ℝℂ\e[0m"
 
 printf "\n"
 }
@@ -82,12 +84,12 @@ cat ip.txt >> saved.ip.txt
 checkfound() {
 
 printf "\n"
-printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Waiting targets,\e[0m\e[1;77m Tekan Ctrl + C to exit...\e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] (▀̿Ĺ̯▀̿ ̿) Menunggu si CAMpret,\e[0m\e[1;77m Tekan Ctrl + C to exit...\e[0m\n"
 while [ true ]; do
 
 
 if [[ -e "ip.txt" ]]; then
-printf "\n\e[1;92m[\e[0m+\e[1;92m] Si CAMpret masuk link!\n"
+printf "\n\e[1;92m[\e[0m+\e[1;92m] (▰˘◡˘▰) Si CAMpret masuk link!\n"
 catch_ip
 rm -rf ip.txt
 
@@ -96,7 +98,7 @@ fi
 sleep 0.5
 
 if [[ -e "Log.log" ]]; then
-printf "\n\e[1;92m[\e[0m+\e[1;92m] Pret! Pret! ni hasil fotonya...\e[0m\n"
+printf "\n\e[1;92m[\e[0m+\e[1;92m] (▰˘◡˘▰) Pret! Pret! ni hasil fotonya...\e[0m\n"
 rm -rf Log.log
 fi
 sleep 0.5
