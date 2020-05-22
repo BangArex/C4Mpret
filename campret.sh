@@ -15,8 +15,8 @@ echo -e '
  \e[35m██████╗ █████╗ ███╗   ███╗ \e[0m\e[31m┌─┐┬─┐┌─┐┌┬┐\e[0m
 \e[35m██╔════╝██╔══██╗████╗ ████║ \e[0m\e[31m├─┘├┬┘├┤  │ \e[0m
 \e[35m██║     ███████║██╔████╔██║ \e[0m\e[31m┴  ┴└─└─┘ ┴\e[0m 
-\e[35m██║     ██╔══██║██║╚██╔╝██║ \e[0m
-\e[35m╚██████╗██║  ██║██║ ╚═╝ ██║\e[0m\e[36mVersion 1.0.0\e[0m
+\e[35m██║     ██╔══██║██║╚██╔╝██║ \e[0m        \e[36mVersion\e[0m
+\e[35m╚██████╗██║  ██║██║ ╚═╝ ██║\e[0m\e         [36m1.0.0\e[0m
  \e[35m╚═════╝╚═╝  ╚═╝╚═╝     ╚═╝\e[0m  '
 
                                                                                
@@ -190,8 +190,8 @@ rm -rf sendlink
 fi
 
 printf "\n"
-printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Serveo.net\e[0m\n"
-printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngorok\e[0m\n"
+printf "\e[1;92m⫸\e[0m\e[1;77m01\e[0m\e[1;92m\e[0m\e[1;93m Serveo.net\e[0m\n"
+printf "\e[1;92m⫸\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngorok\e[0m\n"
 default_option_server="1"
 read -p $'\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Pilih 1 atau 2 : \e[0m' option_server
 option_server="${option_server:-${default_option_server}}"
